@@ -24,3 +24,12 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
              I18n
              KIO
              WidgetsAddons)
+
+include(KDEInstallDirs)
+include(KDECompilerSettings)
+include(KDECMakeSettings)
+include(FeatureSummary)
+include(CheckIncludeFiles)
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(UFW "ufw" REQUIRED)
